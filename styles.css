@@ -9,10 +9,10 @@
 }
 
 .main-content {
-padding-top: 50px
+padding-top: 50px;
 }
 test {
-  color: aquamarine
+  color: aquamarine;
 }
 
 .plo {
@@ -20,7 +20,7 @@ test {
   background-image: url('https://cdn.pixabay.com/photo/2014/05/02/23/46/new-york-city-336475_1280.jpg');
   color: white;
   filter: brightness(1);
-  background-size: cover;
+  background-size: 1200px 500px;
 }
 
 body {
@@ -47,9 +47,39 @@ body {
 }
 
 .side-p {
-  font-size: 30px
+  font-size: 30px;
 }
 
 .copyrights{
   font-size: 20px;
+}
+
+.faqh1, .margintop {
+  margin-top: 3em;
+
+}
+
+.FAQtext {
+
+  font-size: 2em;
+  margin-bottom: 39px;
+}
+
+.Careers-caption {
+  color: aliceblue;
+  font-size: 2em;
+}
+.Careers-text {
+  background-color: aliceblue;
+  font-size: 20px;
+}
+
+.img-javi {
+  width: 250px;
+  height: 200px;
+}
+
+.about-text {
+  background-color:  white;
+  font-size: 150%;
 }
