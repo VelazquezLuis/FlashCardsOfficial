@@ -59,6 +59,16 @@ body {
 
 }
 
+.createFC {
+  
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/13/16/16/paper-2500942_1280.jpg');
+  margin-top: 8em;
+
+}
+.margintop2{
+  margin-top: 5em;
+}
+
 .FAQtext {
 
   font-size: 2em;
@@ -83,3 +93,4 @@ body {
   background-color:  white;
   font-size: 150%;
 }
+
