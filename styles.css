@@ -63,12 +63,17 @@ body {
 .createFC {
   
   background-image: url('file:///C:/revature/FlashCardsOfficial/flashcard.jpg');
-  margin-top: 8em;
+  -o-background-size: cover;
+    background-size: cover;
+  margin-top: 7em;
   color: red;
+  width: 500px;
+  height: 300px;
+  margin-left: 1em;
 
 }
 .margintop2{
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .FAQtext {
@@ -94,4 +99,9 @@ body {
 .about-text {
   background-color:  white;
   font-size: 150%;
+}
+
+.frontp, .backp, .front-title {
+  word-wrap: break-word;
+  text-align: center;
 }

@@ -1,8 +1,35 @@
+let 
+    frontInput = document.getElementById('frontSide'),
+    backInput = document.getElementById('backside');
+    
 
 
-var nTitle = document.getElementById('tTitle1').value;
+frontInput.addEventListener('keyup', e => {
+  e.preventDefault();
+  document.querySelector('p.frontp').innerHTML = frontInput.value;
+});
 
-document.getElementById('mySecondTextArea').value = nTitle;
+backInput.addEventListener('keyup', e => {
+  e.preventDefault();let frontInput = document.getElementById("frontSide"),
+      backInput = document.getElementById("backside");
+
+
+  frontInput.addEventListener("keyup", e => {
+    e.preventDefault();
+    document.querySelector("p.frontp").innerHTML = frontInput.value;
+  });
+
+  backInput.addEventListener("keyup", e => {
+    e.preventDefault();
+    document.querySelector("p.backp").innerHTML = backInput.value;
+  });
+
+  document.querySelector('p.backp').innerHTML = backInput.value;
+}); 
+
+// var nTitle = document.getElementById('tTitle1').value;
+
+// document.getElementById('mySecondTextArea').value = nTitle;
 
 
 
