@@ -1,9 +1,14 @@
+
 let 
     frontInput = document.getElementById('frontSide'),
     backInput = document.getElementById('backside');
     
 
+const buttonElement = document.getElementById('btn');
 
+buttonElement.addEventListener('click', function (event) {
+  alert('Element clicked through function!');
+});
 frontInput.addEventListener('keyup', e => {
   e.preventDefault();
   document.querySelector('p.frontp').innerHTML = frontInput.value;
@@ -27,67 +32,32 @@ backInput.addEventListener('keyup', e => {
   document.querySelector('p.backp').innerHTML = backInput.value;
 }); 
 
-// var nTitle = document.getElementById('tTitle1').value;
 
-// document.getElementById('mySecondTextArea').value = nTitle;
-
-
-
-
-
-// var nTitle = document.querySelector('#tTitle1').value;
-//   nTitle.addEventListener('submit', () => {
-//     var title = new nTitle();
-//     document.querySelector('#frontP').innerHTML = title;
-// })
+// let 
+//     frontInput = document.getElementById('frontSide'),
+//     backInput = document.getElementById('backside');
+    
 
 
-
-
-//   formElement.addEventListener('submit', () => {
-//     var title = new nTitle();
-//     alert('thank you, ' + title.nTitle);
-// })
-
-
-
-
-
-
-
-// document.getElementById("myBtn").addEventListener("click", function(){
-//   document.getElementById("demo").innerHTML = "Hello World";
+// frontInput.addEventListener('keyup', e => {
+//   e.preventDefault();
+//   document.querySelector('p.frontp').innerHTML = frontInput.value;
 // });
 
+// backInput.addEventListener('keyup', e => {
+//   e.preventDefault();let frontInput = document.getElementById("frontSide"),
+//       backInput = document.getElementById("backside");
 
 
-
-// (function () {
-//   'use strict';
-
-//   function Person () {
-//     this.name = document.querySelector('#name').value;
-//     this.email = document.querySelector('#email').value;
-//     this.phone = document.querySelector('#phone').value;
-//     this.description = document.querySelector('#description').value;
-//   }
-
-//   var submitButton = document.querySelector('button[type=submit]');
-//   var formElement = document.querySelector('form');
-//   var formElement1 = document.forms[0];
-
-//   formElement.addEventListener('submit', () => {
-//     var p = new Person();
-//     alert('thank you, ' + p.name);
-//   })
-
-//   submitButton.addEventListener('click', (fred) => {
-//     //fred.stopPropagation();
-//     fred.preventDefault();
-//     var p = new Person();
-//     console.log(p.name);
+//   frontInput.addEventListener("keyup", e => {
+//     e.preventDefault();
+//     document.querySelector("p.frontp").innerHTML = frontInput.value;
 //   });
 
-// }());
+//   backInput.addEventListener("keyup", e => {
+//     e.preventDefault();
+//     document.querySelector("p.backp").innerHTML = backInput.value;
+//   });
 
-
+//   document.querySelector('p.backp').innerHTML = backInput.value;
+// });

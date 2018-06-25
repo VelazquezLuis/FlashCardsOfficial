@@ -17,7 +17,7 @@ test {
 
 .plo {
   margin-top: 39px;
-  background-image: url('file:///C:/revature/FlashCardsOfficial/newyork.jpg');
+  background-image: url('file:///C:/revature/FlashCardsOfficial/images/newyork.jpg');
   color: white;
   filter: brightness(1);
   background-size: 1200px 500px;
@@ -25,7 +25,7 @@ test {
 
 body {
   
-  background-image: url('file:///C:/revature/FlashCardsOfficial/background.jpg');
+  background-image: url('file:///C:/revature/FlashCardsOfficial/images/background.jpg');
   height: 500px;
 
     width: 100%;
@@ -60,9 +60,13 @@ body {
 
 }
 
+.aboutmargin {
+  margin-top: 4em; 
+}
+
 .createFC {
   
-  background-image: url('file:///C:/revature/FlashCardsOfficial/flashcard.jpg');
+  background-image: url('file:///C:/revature/FlashCardsOfficial/images/flashcard.jpg');
   -o-background-size: cover;
     background-size: cover;
   margin-top: 7em;

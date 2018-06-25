@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VelazquezLuis/FlashCardsOfficial/issues"
   },
-  "homepage": "https://github.com/VelazquezLuis/FlashCardsOfficial#readme"
+  "homepage": "https://github.com/VelazquezLuis/FlashCardsOfficial#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
