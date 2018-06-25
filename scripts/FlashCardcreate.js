@@ -1,37 +1,42 @@
+(function () {
+  'use strict';
 
-let 
-    frontInput = document.getElementById('frontSide'),
-    backInput = document.getElementById('backside');
+  function Person () {
+    this.front = document.querySelector('#frontSide').value;
+    this.back = document.querySelector('#backside').value;
     
+  }
 
-const buttonElement = document.getElementById('btn');
+  var submitButton = document.querySelector('#add1');
+  var submitButton = document.querySelector('#add2');
+  var frontInput = document.getElementById('frontSide');
+  var backInput = document.getElementById('backside');
 
-buttonElement.addEventListener('click', function (event) {
-  alert('Element clicked through function!');
-});
-frontInput.addEventListener('keyup', e => {
-  e.preventDefault();
-  document.querySelector('p.frontp').innerHTML = frontInput.value;
-});
-
-backInput.addEventListener('keyup', e => {
-  e.preventDefault();let frontInput = document.getElementById("frontSide"),
-      backInput = document.getElementById("backside");
-
-
-  frontInput.addEventListener("keyup", e => {
+  frontInput.addEventListener('submit', e => {
     e.preventDefault();
-    document.querySelector("p.frontp").innerHTML = frontInput.value;
+    document.querySelector('#frontp').innerHTML = frontInput.value;
+  });
+  
+  backInput.addEventListener('submit', e => {
+    e.preventDefault();
+    let frontInput = document.getElementById("frontSide"),
+        backInput = document.getElementById("backside");
+  
+  
+    frontInput.addEventListener("submit", e => {
+      e.preventDefault();
+      document.querySelector("p.frontp").innerHTML = frontInput.value;
+    });
+  
+    backInput.addEventListener("submit", e => {
+      e.preventDefault();
+      document.querySelector("p.backp").innerHTML = backInput.value;
+    });
+  
+    document.querySelector('p.backp').innerHTML = backInput.value;
   });
 
-  backInput.addEventListener("keyup", e => {
-    e.preventDefault();
-    document.querySelector("p.backp").innerHTML = backInput.value;
-  });
-
-  document.querySelector('p.backp').innerHTML = backInput.value;
-}); 
-
+}());
 
 // let 
 //     frontInput = document.getElementById('frontSide'),
