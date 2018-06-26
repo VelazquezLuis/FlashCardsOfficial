@@ -45,6 +45,6 @@
         </p>
       </section>
     </main>
-  {% endblock }
+  {% endblock %}
   </body>
 </html>

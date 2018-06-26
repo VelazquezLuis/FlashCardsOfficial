@@ -12,10 +12,7 @@
   var formElement = document.querySelector('form');
   var formElement1 = document.forms[0];
 
-  // formElement.addEventListener('submit', () => {
-  //   var p = new Person();
-  //   alert('thank you, ' + p.name);
-  // })
+
 
   submitButton.addEventListener('click', (lui) => {
     //lui.stopPropagation();

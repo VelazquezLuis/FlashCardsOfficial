@@ -23,36 +23,41 @@ app.use(express.static('scripts'));
 app.route('/')
   .get((req, res) => {
     res.render('index');
-})
+});
 
 app.route('/index')
   .get((req, res) => {
     res.render('index');
-})
+});
 
 app.route('/create')
   .get((req, res) => {
     res.render('create');
 })
+.get((req, res) => {
+  res.render('FlashCardcreate.js')
+});
+
 
 app.route('/FAQ')
   .get((req, res) => {
     res.render('FAQ');
-})
+});
 
 app.route('/About')
   .get((req, res) => {
     res.render('About');
-})
+});
 
 app.route('/contact-us')
   .get((req, res) => {
     res.render('contact-us');
-})
+});
 
 app.route('/careers')
   .get((req, res) => {
     res.render('careers');
-})
+});
+
 
 app.listen(9000);
