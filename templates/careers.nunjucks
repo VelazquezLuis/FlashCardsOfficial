@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>careers</title>
+  </head>
+  <body class="container">
+  {% extends 'index.nunjucks' %}
+  {% block main %}
+    <main class="container-fluid main-content ">
+      <section class="row col-sm-12 col-sm-offset-1">
+        <h1 class=" Careersh1 "> Careers.</h1>
+        <table class=" table table-hover Careers-text">
+          <caption class="Careers-caption">Start your career here with us.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Job description</th>
+              <th scope="col">Level</th>
+              <th scope="col">anually salary</th>
+              <th scope="col">location</th>
+            </tr>
+          </thead>
+          <tbody class="table-hover">
+            <tr>
+              <th scope="row">Web developer 1</th>
+              <td>Jr.</td>
+              <td>44k</td>
+              <td>Reston VA.</td>
+            </tr>
+            <tr>
+              <th scope="row">web devloper 2</th>
+              <td>Jr.</td>
+              <td>44k</td>
+              <td>Reston VA.</td>
+            </tr>
+            <tr>
+              <th scope="row">Project Manager</th>
+              <td>Sr.</td>
+              <td>70k</td>
+              <td>Reston Va.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Send resumes with the job description into our contact page</th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  {% endblock %}  
+  </body>
+</html>

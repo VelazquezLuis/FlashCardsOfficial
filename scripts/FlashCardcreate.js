@@ -1,68 +1,12 @@
-(function () {
-  'use strict';
+   
+var submitButton = document.querySelector('.submit-btn');
+var frontInput = document.getElementById('frontSide');
+var backInput = document.getElementById('backside');
+var frontp = document.querySelector('#frontp');
+var backp = document.querySelector('#backp');
 
-  function Person () {
-    this.front = document.querySelector('#frontSide').value;
-    this.back = document.querySelector('#backside').value;
-    
-  }
-
-  var submitButton = document.querySelector('#add1');
-  var submitButton = document.querySelector('#add2');
-  var frontInput = document.getElementById('frontSide');
-  var backInput = document.getElementById('backside');
-
-  frontInput.addEventListener('submit', e => {
-    e.preventDefault();
-    document.querySelector('#frontp').innerHTML = frontInput.value;
-  });
-  
-  backInput.addEventListener('submit', e => {
-    e.preventDefault();
-    let frontInput = document.getElementById("frontSide"),
-        backInput = document.getElementById("backside");
-  
-  
-    frontInput.addEventListener("submit", e => {
-      e.preventDefault();
-      document.querySelector("p.frontp").innerHTML = frontInput.value;
-    });
-  
-    backInput.addEventListener("submit", e => {
-      e.preventDefault();
-      document.querySelector("p.backp").innerHTML = backInput.value;
-    });
-  
-    document.querySelector('p.backp').innerHTML = backInput.value;
-  });
-
-}());
-
-// let 
-//     frontInput = document.getElementById('frontSide'),
-//     backInput = document.getElementById('backside');
-    
-
-
-// frontInput.addEventListener('keyup', e => {
-//   e.preventDefault();
-//   document.querySelector('p.frontp').innerHTML = frontInput.value;
-// });
-
-// backInput.addEventListener('keyup', e => {
-//   e.preventDefault();let frontInput = document.getElementById("frontSide"),
-//       backInput = document.getElementById("backside");
-
-
-//   frontInput.addEventListener("keyup", e => {
-//     e.preventDefault();
-//     document.querySelector("p.frontp").innerHTML = frontInput.value;
-//   });
-
-//   backInput.addEventListener("keyup", e => {
-//     e.preventDefault();
-//     document.querySelector("p.backp").innerHTML = backInput.value;
-//   });
-
-//   document.querySelector('p.backp').innerHTML = backInput.value;
-// });
+submitButton.addEventListener('click', e => {
+   e.preventDefault();
+   frontp.innerHTML = frontInput.value;
+   backp.innerHTML = backInput.value;
+});

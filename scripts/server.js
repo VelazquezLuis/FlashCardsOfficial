@@ -1,7 +1,17 @@
 
-const express = require('express')
-const app = express()
+var http = require('http');
+var fs = require('fs');
 
-app.get('/', (req, res) => res.send('Hello World!'))
+var requestHandler = function (req, res) {
+  if (req.url.indexOf('contact') >= 0) {
+    res.end(fs.readFileSync('contact.html'));
+  } else {
+    res.end(fs.readFileSync('index.html'));
+  }
+}
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+var server = http.createServer(requestHandler);
+
+server.listen(9000, () => {
+  console.log('server is alive');
+});

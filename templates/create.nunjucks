@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Create</title>
+  </head>
+  <body class="container">
+  {% extends 'index.nunjucks' %}
+  {% block main %}
+    <main >
+      <section class="row">
+        <h1 class="margintop2">1. Front side </h1>
+        <form class="col-md-12">
+          <section class="col-sm-6">
+            <label for="frontSide"></label>
+            <input type="text" class="form-control" id="frontSide" placeholder="ex: Html">              
+          </section>
+        </form>
+        <h1 class="">2. Back Side</h1>
+        <form class="col-md-12">
+          <section class="col-sm-6">
+            <label for="backside"></label>
+            <input type="text" class="form-control" id="backside" placeholder="ex: Hyper text markup language">
+            <button type="submit" id="add2" class="btn submit-btn btn-primary">Submit</button>
+          </section>
+        </form>
+        <section class=" createFC col-sm-6">
+          <p class="frontp" id="frontp"></p>
+        </section>
+        <section class=" createFC col-sm-6">    
+        <p class="backp" id="backp"></p>
+        </section>
+      </section>
+    </main>
+  {% endblock %}
+  <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="FlashCardcreate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

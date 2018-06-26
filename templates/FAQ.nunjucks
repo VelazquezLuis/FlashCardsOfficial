@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>FAQ</title>
+  </head>
+  <body class="container">
+  {% extends 'index.nunjucks' %}
+  {% block main %}
+    <main class="container-fluid  ">
+      <section class="row">
+        <h1 class="faqh1">FAQ. <span class="label label-primary">Most Helpful</span></h3>
+        <br>
+        <br>
+        <br>
+        <p class="FAQtext">
+          <strong>&emsp;&gt;&gt;Is it easy to use this website to make flashcards?</strong>
+          <br>
+          &emsp;&emsp;Yes! Easy for all ages, very simple to use try it yourself.
+        </p>
+        <p class="FAQtext">
+          <strong>&emsp;&gt;&gt;May I use the flashcards I create on your website for commercial purposes?</strong>
+          <br>
+          &emsp;&emsp; Yes, but with the credits to Flashcards.com.
+        </p>
+        <p class="FAQtext">
+          <strong>&emsp;&gt;&gt;How can I thank you for the great app?</strong>
+          <br>
+          &emsp;&emsp;You can visit out Facebook page and show your love.
+        </p>
+        <p class="FAQtext">
+          <strong>&emsp;&gt;&gt;Is it free to use this website to make flashcards?</strong>
+          <br>
+          &emsp;&emsp;Yes! you can make as many as you want!!!!
+        </p>
+        <p class="FAQtext">
+          <strong>&emsp;&gt;&gt;What happens if the website froze?</strong>
+          <br>
+          &emsp;&emsp;Just refresh the page make sure you save your flashcards periodically.
+        </p>
+      </section>
+    </main>
+  {% endblock }
+  </body>
+</html>

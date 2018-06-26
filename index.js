@@ -1,3 +1,3 @@
-// require('./scripts/server');
 
-// require('./scripts/express');
+
+require('./scripts/express');
